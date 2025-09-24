@@ -56,6 +56,7 @@ function processData(data) {
         d=data[countryIndex];
         let { name, capital, continents, currencies, languages, timezones, tld, area } = d
         let pairsList = Object.entries({ name,capital, continents, currencies, languages, timezones, tld, area });
+        console.log(pairsList);
         
         for(let i=0; i<8; i++){
             let row = document.createElement("tr");
@@ -70,7 +71,6 @@ function processData(data) {
             row.appendChild(tdProperty);
             row.appendChild(tdData);
             table.appendChild(row);
-            console.log(`${pairsList[i][0]}: ${objToStr(pairsList[i][1])}`);
         }
         tables.appendChild(table);
     }
