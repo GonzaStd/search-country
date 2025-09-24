@@ -1,3 +1,19 @@
 html {
     font-family: sans-serif;
 }
+
+table {
+    border-collapse: collapse;
+    margin: 2em 0 2em 0;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 0.5em;
+    size-adjust: 100;
+    
+}
+
+#reset {
+    margin-top: 1em;
+}
